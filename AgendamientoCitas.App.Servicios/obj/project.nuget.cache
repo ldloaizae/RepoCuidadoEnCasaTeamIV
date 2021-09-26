@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "BgApnWGo+iKrnNxohM2hIc6AQErchcObz0sbwOEBUsb9AIALdD2tsW/QBGec4YofzKlxSChF9O5Y+xrGNZZzEA==",
+  "success": true,
+  "projectFilePath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Servicios\\AgendamientoCitas.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
