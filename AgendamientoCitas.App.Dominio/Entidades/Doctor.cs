@@ -1,4 +1,4 @@
-namespace HospiEnCasa.App.Dominio
+namespace AgendamientoCitas.App.Dominio
 {
      /// <summary>Class <c>Doctor</c>
      /// Modela una Doctor en el sistema 

@@ -1,4 +1,4 @@
-namespace HospiEnCasa.App.Dominio
+namespace AgendamientoCitas.App.Dominio
 {
     /// <summary>
     /// Lista de generos

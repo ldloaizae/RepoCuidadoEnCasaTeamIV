@@ -1,4 +1,4 @@
-namespace HospiEnCasa.App.Dominio
+namespace AgendamientoCitas.App.Dominio
 {
      /// <summary>Class <c>Encuesta</c>
      /// Modela una Encuesta que realiza el sistema en el sistema 

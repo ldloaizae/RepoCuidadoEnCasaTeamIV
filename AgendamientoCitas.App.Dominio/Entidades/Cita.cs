@@ -1,5 +1,5 @@
 using System;
-namespace HospiEnCasa.App.Dominio
+namespace AgendamientoCitas.App.Dominio
 {
      /// <summary>Class <c>Cita</c>
      /// Modela una Cita de paciente en el sistema 

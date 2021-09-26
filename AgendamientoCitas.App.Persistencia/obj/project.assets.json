@@ -1519,6 +1519,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "AgendamientoCitas.App.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AgendamientoCitas.App.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgendamientoCitas.App.Dominio.dll": {}
+        }
       }
     }
   },
@@ -5787,10 +5797,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "AgendamientoCitas.App.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../AgendamientoCitas.App.Dominio/AgendamientoCitas.App.Dominio.csproj",
+      "msbuildProject": "../AgendamientoCitas.App.Dominio/AgendamientoCitas.App.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AgendamientoCitas.App.Dominio >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
@@ -5798,19 +5814,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\": {}
+    "C:\\Users\\camil\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
       "projectName": "AgendamientoCitas.App.Persistencia",
-      "projectPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\obj\\",
+      "projectPath": "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
+      "outputPath": "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JULIAN_RODRIGUEZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5821,7 +5837,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj": {
+              "projectPath": "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5870,7 +5890,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
