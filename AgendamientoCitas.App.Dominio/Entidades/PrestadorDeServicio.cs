@@ -6,7 +6,7 @@ namespace AgendamientoCitas.App.Dominio
     public class PrestadorDeServicio
     {
         // Identificador único de cada paciente
-        public string IdPrestadorDeServicios { get; set; }
+        public string Id { get; set; }
         public string RazonSocial { get; set; }
         public string Nit { get; set; }
         public TipoDePrestador TipoDePrestador { get; set; }

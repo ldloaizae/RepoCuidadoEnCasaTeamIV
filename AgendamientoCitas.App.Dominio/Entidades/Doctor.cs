@@ -6,7 +6,7 @@ namespace AgendamientoCitas.App.Dominio
     public class Doctor:Persona
     {
         // Identificador único de cada Doctor
-        public string IdDoctor { get; set; }
+        public string Id { get; set; }
         public string Especialidad { get; set; }
         public string IdCita { get; set; }
         

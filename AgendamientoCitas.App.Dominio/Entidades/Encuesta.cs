@@ -6,7 +6,7 @@ namespace AgendamientoCitas.App.Dominio
     public class Encuesta
     {
         // Identificador único de cada paciente
-        public string IdEncuesta { get; set; }
+        public string Id { get; set; }
         public string Sintomas { get; set; }
         public string ModalidadAtencion { get; set; }
         
