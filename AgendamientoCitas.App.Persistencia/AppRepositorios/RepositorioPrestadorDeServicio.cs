@@ -23,12 +23,12 @@ namespace AgendamientoCitas.App.Persistencia
           {
             var prestadorDeServicioEncontrado= _appContext.PrestadoresDeServicios.FirstOrDefault(p =>p.Id==idPrestadorDeServicio);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(prestadorDeServicioEncontrado==null)
-            return;
+              return;
             _appContext.PrestadoresDeServicios.Remove(prestadorDeServicioEncontrado);
             _appContext.SaveChanges();//Se deben guardar los cambios
           }
 
-          IEnumerable <PrestadorDeServicio> IRepositorioPrestadorDeServicio.GetAllPrestadoresDeServicios  ()
+          IEnumerable <PrestadorDeServicio> IRepositorioPrestadorDeServicio.GetAllPrestadoresDeServicios()
           {
             return _appContext.PrestadoresDeServicios;
              
