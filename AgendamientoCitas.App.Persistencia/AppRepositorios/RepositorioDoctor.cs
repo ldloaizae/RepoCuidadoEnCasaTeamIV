@@ -7,11 +7,7 @@ namespace AgendamientoCitas.App.Persistencia
 {
     public class RepositorioDoctor:IRepositorioDoctor
     {
-        private readonly AppContext _appContext; //recomendable por seguridad
-        public RepositorioDoctor(AppContext appContext) 
-          {
-            _appContext=appContext; //Necesitamos definir un contexto
-          }
+        private readonly AppContext _appContext = new AppContext();
         Doctor IRepositorioDoctor.AddDoctor(Doctor doctor)
           {
             var doctorAdicionado = _appContext.Doctores.Add(doctor);

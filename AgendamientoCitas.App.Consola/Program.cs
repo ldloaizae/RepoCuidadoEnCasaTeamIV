@@ -6,7 +6,7 @@ namespace AgendamientoCitas.App.Consola
 {
     class Program
     {
-        private static IRepositorioPrestadorDeServicio _repoPrestadorDeServicio=new RepositorioPrestadorDeServicio(new Persistencia.AppContext());
+        private static IRepositorioPrestadorDeServicio _repoPrestadorDeServicio=new RepositorioPrestadorDeServicio();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");

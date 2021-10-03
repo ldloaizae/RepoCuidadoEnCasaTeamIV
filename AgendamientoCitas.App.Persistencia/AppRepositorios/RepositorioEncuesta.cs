@@ -7,11 +7,7 @@ namespace AgendamientoCitas.App.Persistencia
 {
     public class RepositorioEncuesta : IRepositorioEncuesta
     {
-        private readonly AppContext _appContext; //recomendable por seguridad
-        public RepositorioEncuesta(AppContext appContext) 
-          {
-            _appContext=appContext; //Necesitamos definir un contexto
-          }
+        private readonly AppContext _appContext = new AppContext();
         Encuesta IRepositorioEncuesta.AddEncuesta(Encuesta encuesta)
           {
             var encuestaAdicionada= _appContext.Encuestas.Add(encuesta);

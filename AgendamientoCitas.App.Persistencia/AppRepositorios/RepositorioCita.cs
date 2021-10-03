@@ -7,11 +7,7 @@ namespace AgendamientoCitas.App.Persistencia.AppRepositorios
 {
     public class RepositorioCita: IRepositorioCita
     {
-        private readonly AppContext _appContext; //recomendable por seguridad
-        public RepositorioCita(AppContext appContext) 
-          {
-            _appContext=appContext; //Necesitamos definir un contexto
-          }
+        private readonly AppContext _appContext = new AppContext();
         Cita IRepositorioCita.AddCita(Cita cita)
           {
             var citaAdicionada= _appContext.Citas.Add(cita);

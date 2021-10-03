@@ -7,11 +7,7 @@ namespace AgendamientoCitas.App.Persistencia
 {
     public class RepositorioSede : IRepositorioSede
     {
-        private readonly AppContext _appContext; //recomendable por seguridad
-        public RepositorioSede(AppContext appContext) 
-          {
-            _appContext=appContext; //Necesitamos definir un contexto
-          }
+        private readonly AppContext _appContext = new AppContext();
         Sede IRepositorioSede.AddSede(Sede sede)
           {
             var sedeAdicionada= _appContext.Sedes.Add(sede);

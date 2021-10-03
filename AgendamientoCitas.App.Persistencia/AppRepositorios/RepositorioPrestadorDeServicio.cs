@@ -7,11 +7,7 @@ namespace AgendamientoCitas.App.Persistencia
 {
      public class RepositorioPrestadorDeServicio : IRepositorioPrestadorDeServicio
      {
-          private readonly AppContext _appContext; //recomendable por seguridad
-          public RepositorioPrestadorDeServicio(AppContext appContext) 
-          {
-            _appContext=appContext; //Necesitamos definir un contexto
-          }
+          private readonly AppContext _appContext = new AppContext();
           PrestadorDeServicio IRepositorioPrestadorDeServicio.AddPrestadorDeServicio(PrestadorDeServicio prestadorDeServicio)
           {
             var prestadorDeServicioAdicionado= _appContext.PrestadoresDeServicios.Add(prestadorDeServicio);
