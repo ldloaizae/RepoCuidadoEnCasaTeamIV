@@ -73,3 +73,4 @@ C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.
 C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\bin\Debug\net5.0\AgendamientoCitas.App.Dominio.pdb
 C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\PrestadoresDeServicio\Details.cshtml.g.cs
 C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\PrestadoresDeServicio\Create.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\PrestadoresDeServicio\Edit.cshtml.g.cs
