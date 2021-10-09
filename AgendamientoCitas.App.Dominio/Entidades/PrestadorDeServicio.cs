@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 namespace AgendamientoCitas.App.Dominio
 {
      /// <summary>Class <c>Prestador de Servicios</c>
@@ -7,9 +8,12 @@ namespace AgendamientoCitas.App.Dominio
     {
         // Identificador único de cada paciente
         public string Id { get; set; }
+        [Display(Name = "Razon Social")]
         public string RazonSocial { get; set; }
         public string Nit { get; set; }
+        [Display(Name = "Tipo de Prestador")]
         public TipoDePrestador TipoDePrestador { get; set; }
+        [Display(Name = "Numero de Telefono")]
         public string Telefono { get; set; }
         
     }
