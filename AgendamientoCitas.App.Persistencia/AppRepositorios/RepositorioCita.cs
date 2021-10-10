@@ -42,10 +42,10 @@ namespace AgendamientoCitas.App.Persistencia.AppRepositorios
                 citaEncontrada.Consultorio=cita.Consultorio;
                 citaEncontrada.Duracion=cita.Duracion;
                 citaEncontrada.Valor=cita.Valor;
-                citaEncontrada.IdPaciente=cita.IdPaciente;
-                citaEncontrada.IdDoctor=cita.IdDoctor;
-                citaEncontrada.IdEncuesta=cita.IdEncuesta;
-                citaEncontrada.IdSede=cita.IdSede;
+                citaEncontrada.Paciente=cita.Paciente;
+                citaEncontrada.Doctor=cita.Doctor;
+                citaEncontrada.Encuesta=cita.Encuesta;
+                citaEncontrada.Sede=cita.Sede;
                 _appContext.SaveChanges();        
            }
              return citaEncontrada; //retorna el prestadorDeServicioEncontrado encontrado
