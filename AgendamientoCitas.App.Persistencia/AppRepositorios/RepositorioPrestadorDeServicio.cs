@@ -7,11 +7,7 @@ namespace AgendamientoCitas.App.Persistencia
 {
      public class RepositorioPrestadorDeServicio : IRepositorioPrestadorDeServicio
      {
-          private readonly AppContext _appContext; //recomendable por seguridad
-          public RepositorioPrestadorDeServicio(AppContext appContext) 
-          {
-            _appContext=appContext; //Necesitamos definir un contexto
-          }
+          private readonly AppContext _appContext = new AppContext();
           PrestadorDeServicio IRepositorioPrestadorDeServicio.AddPrestadorDeServicio(PrestadorDeServicio prestadorDeServicio)
           {
             var prestadorDeServicioAdicionado= _appContext.PrestadoresDeServicios.Add(prestadorDeServicio);
@@ -19,22 +15,22 @@ namespace AgendamientoCitas.App.Persistencia
             return prestadorDeServicioAdicionado.Entity; 
           }
 
-          void IRepositorioPrestadorDeServicio.DeletePrestadorDeServicio(string idPrestadorDeServicio)
+          void IRepositorioPrestadorDeServicio.DeletePrestadorDeServicio(int idPrestadorDeServicio)
           {
             var prestadorDeServicioEncontrado= _appContext.PrestadoresDeServicios.FirstOrDefault(p =>p.Id==idPrestadorDeServicio);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(prestadorDeServicioEncontrado==null)
-            return;
+              return;
             _appContext.PrestadoresDeServicios.Remove(prestadorDeServicioEncontrado);
             _appContext.SaveChanges();//Se deben guardar los cambios
           }
 
-          IEnumerable <PrestadorDeServicio> IRepositorioPrestadorDeServicio.GetAllPrestadoresDeServicios  ()
+          IEnumerable <PrestadorDeServicio> IRepositorioPrestadorDeServicio.GetAllPrestadoresDeServicios()
           {
             return _appContext.PrestadoresDeServicios;
              
           }
 
-        PrestadorDeServicio IRepositorioPrestadorDeServicio.GetPrestadorDeServicio  (String idPrestadorDeServicio)
+        PrestadorDeServicio IRepositorioPrestadorDeServicio.GetPrestadorDeServicio  (int idPrestadorDeServicio)
           {
            return _appContext.PrestadoresDeServicios.FirstOrDefault(p =>p.Id==idPrestadorDeServicio);//retorna lo que encuentra
           }
