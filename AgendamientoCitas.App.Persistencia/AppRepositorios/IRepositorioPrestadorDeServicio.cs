@@ -9,7 +9,7 @@ namespace AgendamientoCitas.App.Persistencia
         IEnumerable<PrestadorDeServicio> GetAllPrestadoresDeServicios(); //método que me retorna todos los prestadorDeServicio
         PrestadorDeServicio AddPrestadorDeServicio(PrestadorDeServicio prestadorDeServicio);
         PrestadorDeServicio UpdatePrestadorDeServicio(PrestadorDeServicio prestadorDeServicio);
-        void DeletePrestadorDeServicio(String idPrestadorDeServicio);
-        PrestadorDeServicio GetPrestadorDeServicio(String idPrestadorDeServicio);
+        void DeletePrestadorDeServicio(int idPrestadorDeServicio);
+        PrestadorDeServicio GetPrestadorDeServicio(int idPrestadorDeServicio);
     }
 }

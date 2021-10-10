@@ -9,7 +9,7 @@ namespace AgendamientoCitas.App.Persistencia
         IEnumerable<Cita> GetAllCitas(); //método que me retorna todos las Citas
         Cita AddCita(Cita cita);
         Cita UpdateCita(Cita cita);
-        void DeleteCita(String idCita);
-        Cita GetCita(String idCita); 
+        void DeleteCita(int idCita);
+        Cita GetCita(int idCita); 
     }
 }

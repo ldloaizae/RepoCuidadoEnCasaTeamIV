@@ -17,7 +17,7 @@ namespace AgendamientoCitas.App.Frontend.Pages.PrestadoresDeServicio
         {
             _repoPrestadorDeServicio = repoPrestadorDeServicio;
         }
-        public IActionResult OnGet(string id)
+        public IActionResult OnGet(int id)
         {
             prestadoreDeServicio = _repoPrestadorDeServicio.GetPrestadorDeServicio(id);
             if (prestadoreDeServicio == null)

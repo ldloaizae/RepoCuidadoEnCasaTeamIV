@@ -14,7 +14,7 @@ namespace AgendamientoCitas.App.Persistencia
             _appContext.SaveChanges(); //Se deben guardar los cambios
             return doctorAdicionado.Entity; 
           }
-        void IRepositorioDoctor.DeleteDoctor(string idDoctor)
+        void IRepositorioDoctor.DeleteDoctor(int idDoctor)
           {
             var doctorEncontrado= _appContext.Doctores.FirstOrDefault(p =>p.Id==idDoctor);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(doctorEncontrado==null)
@@ -27,7 +27,7 @@ namespace AgendamientoCitas.App.Persistencia
             return _appContext.Doctores;
              
           }
-        Doctor IRepositorioDoctor.GetDoctor(String idDoctor)
+        Doctor IRepositorioDoctor.GetDoctor(int idDoctor)
           {
            return _appContext.Doctores.FirstOrDefault(p =>p.Id==idDoctor);//retorna lo que encuentra
           }

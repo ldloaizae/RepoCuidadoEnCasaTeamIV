@@ -14,7 +14,7 @@ namespace AgendamientoCitas.App.Persistencia
             _appContext.SaveChanges(); //Se deben guardar los cambios
             return sedeAdicionada.Entity; 
           }
-        void IRepositorioSede.DeleteSede(string idSede)
+        void IRepositorioSede.DeleteSede(int idSede)
           {
             var sedeEncontrada= _appContext.Sedes.FirstOrDefault(p =>p.Id==idSede);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(sedeEncontrada==null)
@@ -27,7 +27,7 @@ namespace AgendamientoCitas.App.Persistencia
             return _appContext.Sedes;
              
           }
-        Sede IRepositorioSede.GetSede(String idSede)
+        Sede IRepositorioSede.GetSede(int idSede)
           {
            return _appContext.Sedes.FirstOrDefault(p =>p.Id==idSede);//retorna lo que encuentra
           }

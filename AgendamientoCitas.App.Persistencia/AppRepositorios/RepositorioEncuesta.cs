@@ -14,7 +14,7 @@ namespace AgendamientoCitas.App.Persistencia
             _appContext.SaveChanges(); //Se deben guardar los cambios
             return encuestaAdicionada.Entity; 
           }
-        void IRepositorioEncuesta.DeleteEncuesta(string idEncuesta)
+        void IRepositorioEncuesta.DeleteEncuesta(int idEncuesta)
           {
             var encuestaEncontrada= _appContext.Encuestas.FirstOrDefault(p =>p.Id==idEncuesta);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(encuestaEncontrada==null)
@@ -26,7 +26,7 @@ namespace AgendamientoCitas.App.Persistencia
           {
             return _appContext.Encuestas;             
           }
-        Encuesta IRepositorioEncuesta.GetEncuesta(String idEncuesta)
+        Encuesta IRepositorioEncuesta.GetEncuesta(int idEncuesta)
           {
            return _appContext.Encuestas.FirstOrDefault(p =>p.Id==idEncuesta);//retorna lo que encuentra
           }

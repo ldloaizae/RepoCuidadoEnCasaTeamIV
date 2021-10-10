@@ -14,7 +14,7 @@ namespace AgendamientoCitas.App.Persistencia.AppRepositorios
             _appContext.SaveChanges(); //Se deben guardar los cambios
             return pacienteAdicionado.Entity; 
           }
-        void IRepositorioPaciente.DeletePaciente(string idPaciente)
+        void IRepositorioPaciente.DeletePaciente(int idPaciente)
           {
             var pacienteEncontrado= _appContext.Pacientes.FirstOrDefault(p =>p.Id==idPaciente);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(pacienteEncontrado==null)
@@ -27,7 +27,7 @@ namespace AgendamientoCitas.App.Persistencia.AppRepositorios
             return _appContext.Pacientes;
              
           }
-        Paciente IRepositorioPaciente.GetPaciente(String idPaciente)
+        Paciente IRepositorioPaciente.GetPaciente(int idPaciente)
           {
            return _appContext.Pacientes.FirstOrDefault(p =>p.Id==idPaciente);//retorna lo que encuentra
           }

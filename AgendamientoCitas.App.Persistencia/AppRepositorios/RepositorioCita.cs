@@ -14,7 +14,7 @@ namespace AgendamientoCitas.App.Persistencia.AppRepositorios
             _appContext.SaveChanges(); //Se deben guardar los cambios
             return citaAdicionada.Entity; 
           }
-        void IRepositorioCita.DeleteCita(string idCita)
+        void IRepositorioCita.DeleteCita(int idCita)
           {
             var citaEncontrada= _appContext.Citas.FirstOrDefault(p =>p.Id==idCita);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(citaEncontrada==null)
@@ -27,7 +27,7 @@ namespace AgendamientoCitas.App.Persistencia.AppRepositorios
             return _appContext.Citas;
              
           }
-        Cita IRepositorioCita.GetCita(String idCita)
+        Cita IRepositorioCita.GetCita(int idCita)
           {
            return _appContext.Citas.FirstOrDefault(p =>p.Id==idCita);//retorna lo que encuentra
           }

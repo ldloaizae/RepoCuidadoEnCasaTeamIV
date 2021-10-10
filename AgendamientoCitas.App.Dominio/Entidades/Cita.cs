@@ -7,7 +7,7 @@ namespace AgendamientoCitas.App.Dominio
     public class Cita
     {
         // Identificador único de cada persona
-        public string Id { get; set; }
+        public int Id { get; set; }
         public DateTime FechaHora  { get; set; }
         //public string Hora { get; set; }
         //public string Fecha { get; set; }

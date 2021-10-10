@@ -9,7 +9,7 @@ namespace AgendamientoCitas.App.Persistencia
         IEnumerable<Encuesta> GetAllEncuestas(); //método que me retorna todos las Encuestas
         Encuesta AddEncuesta(Encuesta encuesta);
         Encuesta UpdateEncuesta(Encuesta encuesta);
-        void DeleteEncuesta(String idEncuesta);
-        Encuesta GetEncuesta(String idEncuesta);         
+        void DeleteEncuesta(int idEncuesta);
+        Encuesta GetEncuesta(int idEncuesta);         
     }
 }

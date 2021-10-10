@@ -7,7 +7,7 @@ namespace AgendamientoCitas.App.Dominio
     public class PrestadorDeServicio
     {
         // Identificador único de cada paciente
-        public string Id { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "La Razon Social es obligatoria")]
         [MaxLength(50, ErrorMessage = "Maximo 50 caracteres")]
         [Display(Name = "Razon Social")]

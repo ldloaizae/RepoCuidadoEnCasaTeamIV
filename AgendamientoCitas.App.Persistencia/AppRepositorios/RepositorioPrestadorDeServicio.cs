@@ -15,7 +15,7 @@ namespace AgendamientoCitas.App.Persistencia
             return prestadorDeServicioAdicionado.Entity; 
           }
 
-          void IRepositorioPrestadorDeServicio.DeletePrestadorDeServicio(string idPrestadorDeServicio)
+          void IRepositorioPrestadorDeServicio.DeletePrestadorDeServicio(int idPrestadorDeServicio)
           {
             var prestadorDeServicioEncontrado= _appContext.PrestadoresDeServicios.FirstOrDefault(p =>p.Id==idPrestadorDeServicio);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(prestadorDeServicioEncontrado==null)
@@ -30,7 +30,7 @@ namespace AgendamientoCitas.App.Persistencia
              
           }
 
-        PrestadorDeServicio IRepositorioPrestadorDeServicio.GetPrestadorDeServicio  (String idPrestadorDeServicio)
+        PrestadorDeServicio IRepositorioPrestadorDeServicio.GetPrestadorDeServicio  (int idPrestadorDeServicio)
           {
            return _appContext.PrestadoresDeServicios.FirstOrDefault(p =>p.Id==idPrestadorDeServicio);//retorna lo que encuentra
           }

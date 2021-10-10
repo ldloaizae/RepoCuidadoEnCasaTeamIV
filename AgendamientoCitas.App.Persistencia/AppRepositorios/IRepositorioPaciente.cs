@@ -9,7 +9,7 @@ namespace AgendamientoCitas.App.Persistencia
         IEnumerable<Paciente> GetAllPacientes(); //método que me retorna todos los Paciente
         Paciente AddPaciente(Paciente paciente);
         Paciente UpdatePaciente(Paciente paciente);
-        void DeletePaciente(String idPaciente);
-        Paciente GetPaciente(String idPaciente);
+        void DeletePaciente(int idPaciente);
+        Paciente GetPaciente(int idPaciente);
     }
 }

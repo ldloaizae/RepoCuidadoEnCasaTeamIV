@@ -9,7 +9,7 @@ namespace AgendamientoCitas.App.Persistencia
         IEnumerable<Sede> GetAllSedes(); //método que me retorna todos las Sedes
         Sede AddSede(Sede sede);
         Sede UpdateSede(Sede sede);
-        void DeleteSede(String idSede);
-        Sede GetSede(String idSede); 
+        void DeleteSede(int idSede);
+        Sede GetSede(int idSede); 
     }
 }

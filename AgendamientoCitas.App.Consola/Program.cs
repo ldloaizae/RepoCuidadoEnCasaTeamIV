@@ -18,7 +18,7 @@ namespace AgendamientoCitas.App.Consola
         {
             var prestadorDeServicio =new PrestadorDeServicio
             {
-                Id = "0001",
+                //Id = "0001",
                 RazonSocial="Prestador de servicio 1",
                 Nit="52525252525-0",
                 Telefono="3002152014",
