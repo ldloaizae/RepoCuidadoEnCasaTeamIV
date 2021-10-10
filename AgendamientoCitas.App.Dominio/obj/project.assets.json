@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\camil\\.nuget\\packages\\": {}
+    "C:\\Users\\57312\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\57312\\Desktop\\RepoAgendamientoCitas-TeamIV-jnaveros40\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
       "projectName": "AgendamientoCitas.App.Dominio",
-      "projectPath": "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-      "outputPath": "C:\\hospitalizacion\\ProyecoCiclo3\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\57312\\Desktop\\RepoAgendamientoCitas-TeamIV-jnaveros40\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\57312\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\57312\\Desktop\\RepoAgendamientoCitas-TeamIV-jnaveros40\\AgendamientoCitas.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\57312\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
