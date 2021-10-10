@@ -6,9 +6,9 @@ namespace AgendamientoCitas.App.Dominio
     public class Paciente:Persona
     {
         // Identificador único de cada paciente
-        public int PacienteId { get; set; }
+        public int IdPaciente { get; set; }
         public TipoPaciente TipoPaciente { get; set; }
-        public string IdCita { get; set; }
+        //public string IdCita { get; set; }
         
     }
 }

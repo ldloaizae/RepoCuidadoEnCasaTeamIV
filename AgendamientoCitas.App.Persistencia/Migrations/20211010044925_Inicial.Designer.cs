@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgendamientoCitas.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210927000344_Inicial")]
+    [Migration("20211010044925_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,29 +23,31 @@ namespace AgendamientoCitas.App.Persistencia.Migrations
 
             modelBuilder.Entity("AgendamientoCitas.App.Dominio.Cita", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Consultorio")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("DoctorId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Duracion")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("EncuestaId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("FechaHora")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("IdDoctor")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("PacienteId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("IdEncuesta")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("IdPaciente")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("IdSede")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("SedeId")
+                        .HasColumnType("int");
 
                     b.Property<int>("TipoServicio")
                         .HasColumnType("int");
@@ -55,13 +57,23 @@ namespace AgendamientoCitas.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("EncuestaId");
+
+                    b.HasIndex("PacienteId");
+
+                    b.HasIndex("SedeId");
+
                     b.ToTable("Citas");
                 });
 
             modelBuilder.Entity("AgendamientoCitas.App.Dominio.Encuesta", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("ModalidadAtencion")
                         .HasColumnType("nvarchar(max)");
@@ -76,8 +88,10 @@ namespace AgendamientoCitas.App.Persistencia.Migrations
 
             modelBuilder.Entity("AgendamientoCitas.App.Dominio.Persona", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
@@ -116,16 +130,25 @@ namespace AgendamientoCitas.App.Persistencia.Migrations
 
             modelBuilder.Entity("AgendamientoCitas.App.Dominio.PrestadorDeServicio", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Nit")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RazonSocial")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int?>("SedeId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Telefono")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TipoDePrestador")
@@ -133,13 +156,17 @@ namespace AgendamientoCitas.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("SedeId");
+
                     b.ToTable("PrestadoresDeServicios");
                 });
 
             modelBuilder.Entity("AgendamientoCitas.App.Dominio.Sede", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Direccion")
                         .HasColumnType("nvarchar(max)");
@@ -162,9 +189,8 @@ namespace AgendamientoCitas.App.Persistencia.Migrations
                     b.Property<string>("Especialidad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("IdCita")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("Doctor_IdCita");
+                    b.Property<int>("IdDoctor")
+                        .HasColumnType("int");
 
                     b.HasDiscriminator().HasValue("Doctor");
                 });
@@ -173,13 +199,52 @@ namespace AgendamientoCitas.App.Persistencia.Migrations
                 {
                     b.HasBaseType("AgendamientoCitas.App.Dominio.Persona");
 
-                    b.Property<string>("IdCita")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("IdPaciente")
+                        .HasColumnType("int");
 
                     b.Property<int>("TipoPaciente")
                         .HasColumnType("int");
 
                     b.HasDiscriminator().HasValue("Paciente");
+                });
+
+            modelBuilder.Entity("AgendamientoCitas.App.Dominio.Cita", b =>
+                {
+                    b.HasOne("AgendamientoCitas.App.Dominio.Doctor", "Doctor")
+                        .WithMany()
+                        .HasForeignKey("DoctorId");
+
+                    b.HasOne("AgendamientoCitas.App.Dominio.Encuesta", "Encuesta")
+                        .WithMany()
+                        .HasForeignKey("EncuestaId");
+
+                    b.HasOne("AgendamientoCitas.App.Dominio.Paciente", "Paciente")
+                        .WithMany()
+                        .HasForeignKey("PacienteId");
+
+                    b.HasOne("AgendamientoCitas.App.Dominio.Sede", "Sede")
+                        .WithMany()
+                        .HasForeignKey("SedeId");
+
+                    b.Navigation("Doctor");
+
+                    b.Navigation("Encuesta");
+
+                    b.Navigation("Paciente");
+
+                    b.Navigation("Sede");
+                });
+
+            modelBuilder.Entity("AgendamientoCitas.App.Dominio.PrestadorDeServicio", b =>
+                {
+                    b.HasOne("AgendamientoCitas.App.Dominio.Sede", null)
+                        .WithMany("PrestadoresDeServicio")
+                        .HasForeignKey("SedeId");
+                });
+
+            modelBuilder.Entity("AgendamientoCitas.App.Dominio.Sede", b =>
+                {
+                    b.Navigation("PrestadoresDeServicio");
                 });
 #pragma warning restore 612, 618
         }
