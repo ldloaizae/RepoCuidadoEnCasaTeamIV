@@ -1,0 +1,32 @@
+﻿@page
+@model AgendamientoCitas.App.Frontend.Pages.Pacientes.DetailsModel
+@{
+}
+<h1>Detalles del pacientes</h1>
+<table class="table table-dark">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.paciente.IdPaciente</td>
+    </tr>
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.paciente.Nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Apellidos</th>
+        <td>@Model.paciente.Apellidos</td>
+    </tr>
+    <tr>
+        <th scope="col">Tipo de Paciente</th>
+        <td>@Model.paciente.TipoPaciente</td>
+    </tr>
+    <tr>
+        <th scope="col">Identificacion</th>
+        <td>@Model.paciente.Identificacion</td>
+    </tr>
+    <tr>
+        <th scope="col">Telefono</th>
+        <td>@Model.paciente.Telefono</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

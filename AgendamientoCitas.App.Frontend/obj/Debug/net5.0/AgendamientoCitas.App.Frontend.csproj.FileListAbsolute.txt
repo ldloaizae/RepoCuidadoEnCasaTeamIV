@@ -150,3 +150,13 @@ C:\hospitalizacion\ProyecoCiclo3\RepoAgendamientoCitas-TeamIV\AgendamientoCitas.
 C:\hospitalizacion\ProyecoCiclo3\RepoAgendamientoCitas-TeamIV\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\ref\AgendamientoCitas.App.Frontend.dll
 C:\hospitalizacion\ProyecoCiclo3\RepoAgendamientoCitas-TeamIV\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\AgendamientoCitas.App.Frontend.pdb
 C:\hospitalizacion\ProyecoCiclo3\RepoAgendamientoCitas-TeamIV\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\AgendamientoCitas.App.Frontend.genruntimeconfig.cache
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Citas\Index.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Doctores\Index.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Encuestas\Index.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Index.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Sedes\Index.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Citas\Details.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Doctores\Details.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Encuestas\Details.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Details.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Sedes\Details.cshtml.g.cs

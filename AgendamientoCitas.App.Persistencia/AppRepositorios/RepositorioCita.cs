@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AgendamientoCitas.App.Dominio;
 
-namespace AgendamientoCitas.App.Persistencia.AppRepositorios
+namespace AgendamientoCitas.App.Persistencia
 {
     public class RepositorioCita: IRepositorioCita
     {

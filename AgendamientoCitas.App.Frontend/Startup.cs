@@ -27,6 +27,11 @@ namespace AgendamientoCitas.App.Frontend
         {
             services.AddRazorPages();
             services.AddSingleton<IRepositorioPrestadorDeServicio, RepositorioPrestadorDeServicio>();
+            services.AddSingleton<IRepositorioSede, RepositorioSede>();
+            services.AddSingleton<IRepositorioEncuesta, RepositorioEncuesta>();
+            services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
+            services.AddSingleton<IRepositorioDoctor, RepositorioDoctor>();
+            services.AddSingleton<IRepositorioCita, RepositorioCita>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
