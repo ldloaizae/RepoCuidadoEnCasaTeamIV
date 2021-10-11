@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj": {}
+    "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj": {
+    "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
+        "projectUniqueName": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
         "projectName": "AgendamientoCitas.App.Dominio",
-        "projectPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\obj\\",
+        "projectPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\JULIAN_RODRIGUEZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,43 +52,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj": {
+    "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj",
+        "projectUniqueName": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj",
         "projectName": "AgendamientoCitas.App.Frontend",
-        "projectPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj",
-        "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Frontend\\obj\\",
+        "projectPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Frontend\\AgendamientoCitas.App.Frontend.csproj",
+        "packagesPath": "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Frontend\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\JULIAN_RODRIGUEZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj"
+              "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj": {
+                "projectPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj"
               },
-              "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj": {
-                "projectPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj"
+              "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj": {
+                "projectPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj"
               }
             }
           }
@@ -126,40 +114,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj": {
+    "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
         "projectName": "AgendamientoCitas.App.Persistencia",
-        "projectPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Persistencia\\obj\\",
+        "projectPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\AgendamientoCitas.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\JULIAN_RODRIGUEZ\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\JULIAN_RODRIGUEZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\General\\Documents\\GitHub\\RepoAgendamientoCitas-TeamIV\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj"
+              "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj": {
+                "projectPath": "C:\\ProyectoCiclo3\\AgendamientoCitas\\AgendamientoCitas.App\\AgendamientoCitas.App.Dominio\\AgendamientoCitas.App.Dominio.csproj"
               }
             }
           }
@@ -210,7 +192,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
