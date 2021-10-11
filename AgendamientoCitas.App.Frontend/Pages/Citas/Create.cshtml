@@ -3,69 +3,60 @@
 @model AgendamientoCitas.App.Frontend.Pages.Citas.CreateModel
 @{
 }
-
-<h1 style="text-align:center;">Separar una</h1>
-
-<h4 style="text-align:center;">Cita</h4>
-<hr />
-<div class="row">
-    <div class="col-md-11" style="margin:3%!important;">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Cita.FechaHora" class="control-label"></label>
-                <input asp-for="Cita.FechaHora" class="form-control" />
-                <span asp-validation-for="Cita.FechaHora" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.TipoServicio" class="control-label"></label>
-                <input asp-for="Cita.TipoServicio" class="form-control" />
-                <span asp-validation-for="Cita.TipoServicio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.Consultorio" class="control-label"></label>
-                <input asp-for="Cita.Consultorio" class="form-control" />
-                <span asp-validation-for="Cita.Consultorio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.Duracion" class="control-label"></label>
-                <input asp-for="Cita.Duracion" class="form-control" />
-                <span asp-validation-for="Cita.Duracion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.Valor" class="control-label"></label>
-                <input asp-for="Cita.Valor" class="form-control" />
-                <span asp-validation-for="Cita.Valor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.Paciente" class="control-label"></label>
-                <input asp-for="Cita.Paciente" class="form-control" />
-                <span asp-validation-for="Cita.Paciente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.Doctor" class="control-label"></label>
-                <input asp-for="Cita.Doctor" class="form-control" />
-                <span asp-validation-for="Cita.Doctor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.Encuesta" class="control-label"></label>
-                <input asp-for="Cita.Encuesta" class="form-control" />
-                <span asp-validation-for="Cita.Encuesta" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cita.Sede" class="control-label"></label>
-                <input asp-for="Cita.Sede" class="form-control" />
-                <span asp-validation-for="Cita.Sede" class="text-danger"></span>
-            </div>
-
-
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-success" />
-            </div>
-        </form>
+<h1>Nueva Cita</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="cita.FechaHora"></label>
+        <input asp-for="cita.FechaHora" class="form-control">
+        <span asp-validation-for="cita.FechaHora" class="text-danger"></span>
     </div>
-</div>
+    <div class="form-group">
+        <label asp-for="cita.TipoServicio"></label>
+        <select asp-for="cita.TipoServicio" asp-items="Html.GetEnumSelectList<TipoServicio>()" class="form-control">
+        </select>
+        <span asp-validation-for="cita.TipoServicio" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cita.Consultorio"></label>
+        <input asp-for="cita.Consultorio" class="form-control">
+        <span asp-validation-for="cita.Consultorio" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cita.Duracion"></label>
+        <input asp-for="cita.Duracion" class="form-control">
+        <span asp-validation-for="cita.Duracion" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cita.Valor"></label>
+        <input asp-for="cita.Valor" class="form-control">
+        <span asp-validation-for="cita.Valor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cita.Paciente"></label>
+        <select asp-for="cita.Paciente" asp-items="Html.GetEnumSelectList<Paciente>()" class="form-control">
+        </select>
+        <span asp-validation-for="cita.Paciente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cita.Doctor"></label>
+        <select asp-for="cita.Doctor" asp-items="Html.GetEnumSelectList<Doctor>()" class="form-control">
+        </select>
+        <span asp-validation-for="cita.Doctor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cita.Encuesta"></label>
+        <select asp-for="cita.Encuesta" asp-items="Html.GetEnumSelectList<Encuesta>()" class="form-control">
+        </select>
+        <span asp-validation-for="cita.Encuesta" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cita.Sede"></label>
+        <select asp-for="cita.Sede" asp-items="Html.GetEnumSelectList<Sede>()" class="form-control">
+        </select>
+        <span asp-validation-for="cita.Sede" class="text-danger"></span>
+    </div>
+    
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <button type="submit" class="btn btn-primary">Crear prestador de servicio</button>
+</form>
+<a class="btn btn-secundary" asp-page="./Index">Volver</a>
