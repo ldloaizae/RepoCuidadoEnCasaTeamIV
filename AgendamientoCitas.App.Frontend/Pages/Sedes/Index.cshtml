@@ -1,0 +1,34 @@
+﻿@page
+@model AgendamientoCitas.App.Frontend.Pages.Sedes.IndexModel
+@{
+}
+<h1>Listado Sedes</h1>
+<a class="btn btn-primary" asp-page="./Create">Nueva Sede</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sede in Model.sedes)
+        {
+           <tr>
+               <td>@sede.Nombre</td>
+               <td>@sede.Direccion</td>               
+               <td>@sede.Telefono</td>
+               <td>
+                   <a class="btn btn-primary" asp-page="./Details" asp-route-id="@sede.Id">
+                    Detalle
+                   </a>
+                   <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@sede.Id">
+                    Editar
+                   </a>
+               </td>
+           </tr>   
+        }
+    </tbody>
+</table>
