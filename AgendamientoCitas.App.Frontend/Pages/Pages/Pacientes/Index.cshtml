@@ -1,0 +1,36 @@
+﻿@page
+@model AgendamientoCitas.App.Frontend.Pages.Pacientes.IndexModel
+@{
+}
+<h1>Listado pacientes</h1>
+<a class="btn btn-primary" asp-page="./Create">Nuevo Paciente</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>            
+            <th scope="col">Apellido</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Tipo de paciente</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var paciente in Model.pacientes)
+        {
+           <tr>
+               <td>@paciente.Nombre</td>
+               <td>@paciente.Apellidos</td>
+               <td>@paciente.Genero</td>              
+               <td>@paciente.TipoPaciente</td>
+               <td>
+                   <a class="btn btn-primary" asp-page="./Details" asp-route-id="@paciente.IdPaciente">
+                    Detalle
+                   </a>
+                   <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@paciente.IdPaciente">
+                    Editar
+                   </a>
+               </td>
+           </tr>   
+        }
+    </tbody>
+</table>
