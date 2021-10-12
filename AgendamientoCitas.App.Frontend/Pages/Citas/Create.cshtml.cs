@@ -27,7 +27,7 @@ namespace AgendamientoCitas.App.Frontend.Pages.Citas
         {
             if (ModelState.IsValid)
             {
-                _repoCita.AddPrestadorDeServicio(cita);
+                _repoCita.AddCita(cita);
                 return RedirectToPage("Index");
             }
             else
