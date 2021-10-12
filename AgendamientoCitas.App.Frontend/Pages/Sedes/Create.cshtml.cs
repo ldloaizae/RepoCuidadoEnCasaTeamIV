@@ -14,8 +14,8 @@ namespace AgendamientoCitas.App.Frontend.Pages.Sedes
     public class CreateModel : PageModel
     {
         private readonly IRepositorioSede _repoSede;
-        public Sede Sede {get; set;}
-        public CreateModel(IRepositorioSede reposede)
+        public Sede sede {get; set;}
+        public CreateModel(IRepositorioSede repoSede)
         {
             _repoSede = repoSede;
         }

@@ -20,8 +20,8 @@ namespace AgendamientoCitas.App.Frontend.Pages.Doctores
         }
         public IActionResult OnGet(int id)
         {
-            doctor = _repoDoctor.GetDoctor(id);
-            if (doctor==null)
+            Doctor = _repoDoctor.GetDoctor(id);
+            if (Doctor==null)
             {
                 return NotFound();
             }
