@@ -7,20 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using AgendamientoCitas.App.Dominio;
 using AgendamientoCitas.App.Persistencia;
 
-namespace AgendamientoCitas.App.Frontend.Pages.PrestadoresDeServicio
+namespace AgendamientoCitas.App.Frontend.Pages.Sedes
 {
     public class DetailsModel : PageModel
     {
-        private readonly IRepositorioPrestadorDeServicio _repoPrestadorDeServicio;
-        public PrestadorDeServicio prestadoreDeServicio {get; set;}
-        public DetailsModel(IRepositorioPrestadorDeServicio repoPrestadorDeServicio)
+        private readonly IRepositorioSede _repoSede;
+        public Sede sede {get; set;}
+        public DetailsModel(IRepositorioSede repoSede)
         {
-            _repoPrestadorDeServicio = repoPrestadorDeServicio;
+            _repoSede = repoSede;
         }
         public IActionResult OnGet(int id)
         {
-            prestadoreDeServicio = _repoPrestadorDeServicio.GetPrestadorDeServicio(id);
-            if (prestadoreDeServicio == null)
+            sede = _repoSede.GetSede(id);
+            if (sede == null)
             {
                 return NotFound();
             }
