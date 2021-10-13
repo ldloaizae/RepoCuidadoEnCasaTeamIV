@@ -1,0 +1,28 @@
+﻿@page
+@using AgendamientoCitas.App.Dominio
+@model AgendamientoCitas.App.Frontend.Pages.Sedes.EditModel
+@{
+}
+
+<h1>Editar Sede</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="sede.Nombre"></label>
+        <input asp-for="sede.Nombre" class="form-control">
+    
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sede.PrestadoresDeServicio"></label>
+        <select asp-for="sede.PrestadoresDeServicio" asp-items="Html.GetEnumSelectList<TipoDePrestador>()" class="form-control">
+        </select>
+    
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.Telefono"></label>
+        <input asp-for="sede.Telefono" class="form-control">
+        <span asp-validation-for="sede.Telefono" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar Sede</button>
+</form>
+<a class="btn btn-secundary" asp-page="./Index">Volver</a>
