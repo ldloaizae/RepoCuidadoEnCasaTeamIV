@@ -164,3 +164,7 @@ C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.
 C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Doctores\Edit.cshtml.g.cs
 C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Sedes\Create.cshtml.g.cs
 C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Sedes\Edit.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Create.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Edit.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Encuestas\Create.cshtml.g.cs
+C:\ProyectoCiclo3\AgendamientoCitas\AgendamientoCitas.App\AgendamientoCitas.App.Frontend\obj\Debug\net5.0\Razor\Pages\Encuestas\Edit.cshtml.g.cs

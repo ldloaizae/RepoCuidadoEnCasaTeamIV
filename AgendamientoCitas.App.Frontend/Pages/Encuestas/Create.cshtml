@@ -1,0 +1,108 @@
+﻿@page
+@model AgendamientoCitas.App.Frontend.Pages.Encuestas.CreateModel
+@{
+}
+<h1>Encuesta de Sintomas</h1>
+<h5>Si desea agendar una cita por favor diligencie la siguiente encuesta</h5>
+   
+<fieldset class="form-group row">
+    <legend class="col-form-label col-sm-7 float-sm-left pt-15">1.¿Ha tenido fiebre en los últimos 14 días? </legend>
+    <div class="col-sm-10">
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Si
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          No
+        </label>
+      </div>
+ <fieldset> 
+    <fieldset class="form-group row">
+    <legend class="col-form-label col-sm-7 float-sm-left pt-0">2.¿Ha tenido problemas respiratorios,tos,dolor de garganta,perdida de olfato o gusto? </legend>
+    <div class="col-sm-10">
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Si
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          No
+        </label>
+      </div>
+      </fieldset>
+
+ <fieldset class="form-group row">
+    <legend class="col-form-label col-sm-7 float-lg-left pt-0">3.¿Ha tenido sensación de cansancio o malestar en los ultimos días? </legend>
+    <div class="col-sm-10">
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Si
+        </label>
+      </div>      
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          No
+        </label>
+      </div>
+ <fieldset class="form-group row">
+    <legend class="col-form-label col-sm-7 float-sm-left pt-0">4.¿Vive o ha estado en contacto con paciente diagnosticaso o sospechoso de Covid? </legend>
+    <div class="col-sm-10">
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Si
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          No
+        </label>
+      </div>
+ <fieldset class="form-group row">    
+    <legend class="col-form-label col-sm-7 float-sm-left pt-0">5.¿Esta esperando resultados de prueba Covid 19? </legend>
+    <div class="col-sm-10">
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Si
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          No
+        </label>
+      </div>
+ <fieldset class="form-group row">    
+    <legend class="col-form-label col-sm-7 float-sm-left pt-0">6.¿Tiene alguna coomorbilidad diagnosticada?</legend>
+        <div class="col-sm-10">
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Si
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          No
+        </label>
+        <div class="col-sm-10">
+        <legend class="col-form-label col-sm-15 float-sm-left pt-0">si la respuesta es "Si" escribala en el recuadro</legend>
+      <input type="email" class="form-control" id="colFormLabel" placeholder="">
+     </div>
+      </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">Registrar encuesta</button>
+    </div>   
+    <a class="btn btn - secondary" asp-page = "./Index">Regresar</a>    
