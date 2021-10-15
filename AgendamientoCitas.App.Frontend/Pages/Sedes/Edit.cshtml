@@ -9,14 +9,13 @@
     <div class="form-group">
         <label asp-for="sede.Nombre"></label>
         <input asp-for="sede.Nombre" class="form-control">
-    
+        <span asp-validation-for="sede.Nombre" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="sede.PrestadoresDeServicio"></label>
-        <select asp-for="sede.PrestadoresDeServicio" asp-items="Html.GetEnumSelectList<TipoDePrestador>()" class="form-control">
-        </select>
-    
+        <label asp-for="sede.Direccion"></label>
+        <input asp-for="sede.Direccion" class="form-control">
+        <span asp-validation-for="sede.Direccion" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="sede.Telefono"></label>
