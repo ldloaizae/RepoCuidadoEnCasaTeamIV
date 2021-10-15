@@ -13,15 +13,15 @@ namespace AgendamientoCitas.App.Frontend.Pages.Doctores
     public class EditModel : PageModel
     {
         private readonly IRepositorioDoctor _repoDoctor;
-        public Doctor Doctor {get; set;}
+        public Doctor doctor {get; set;}
         public EditModel(IRepositorioDoctor repoDoctor)
         {
             _repoDoctor = repoDoctor;
         }
         public IActionResult OnGet(int id)
         {
-            Doctor = _repoDoctor.GetDoctor(id);
-            if (Doctor==null)
+            doctor = _repoDoctor.GetDoctor(id);
+            if (doctor==null)
             {
                 return NotFound();
             }
@@ -32,8 +32,15 @@ namespace AgendamientoCitas.App.Frontend.Pages.Doctores
         }
         public IActionResult OnPost(Doctor doctor)
         {
-            _repoDoctor.UpdateDoctor(doctor);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoDoctor.UpdateDoctor(doctor);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ namespace AgendamientoCitas.App.Persistencia
           }
         void IRepositorioDoctor.DeleteDoctor(int idDoctor)
           {
-            var doctorEncontrado= _appContext.Doctores.FirstOrDefault(p =>p.IdDoctor==idDoctor);//p es el primero que encuentra. Recorre todos los elementos de la tabla
+            var doctorEncontrado= _appContext.Doctores.FirstOrDefault(p =>p.Id==idDoctor);//p es el primero que encuentra. Recorre todos los elementos de la tabla
             if(doctorEncontrado==null)
               return;
             _appContext.Doctores.Remove(doctorEncontrado);
@@ -29,11 +29,11 @@ namespace AgendamientoCitas.App.Persistencia
           }
         Doctor IRepositorioDoctor.GetDoctor(int idDoctor)
           {
-           return _appContext.Doctores.FirstOrDefault(p =>p.IdDoctor==idDoctor);//retorna lo que encuentra
+           return _appContext.Doctores.FirstOrDefault(p =>p.Id==idDoctor);//retorna lo que encuentra
           }
         Doctor IRepositorioDoctor.UpdateDoctor(Doctor doctor)
           {
-           var doctorEncontrado= _appContext.Doctores.FirstOrDefault(p =>p.IdDoctor==doctor.IdDoctor);
+           var doctorEncontrado= _appContext.Doctores.FirstOrDefault(p =>p.Id==doctor.Id);
            //No se busca el idDoctorEncontrado, se busca la doctorEncontrado.Id
            if(doctorEncontrado!=null)
            {

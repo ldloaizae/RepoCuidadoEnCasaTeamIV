@@ -9,35 +9,46 @@
     <div class="form-group">
         <label asp-for="doctor.Nombre"></label>
         <input asp-for="doctor.Nombre" class="form-control">
+        <span asp-validation-for = "doctor.Nombre" class="text-danger"></span>
         
         </div>
-
+    <div class="form-group">
+        <label asp-for="doctor.Apellidos"></label>
+        <input asp-for="doctor.Apellidos" class="form-control">
+        <span asp-validation-for = "doctor.Apellidos" class="text-danger"></span>
+        
+        </div>
 
     <div class="form-group">
         <label asp-for="doctor.Identificacion"></label>
         <input asp-for="doctor.Identificacion" class="form-control">
+        <span asp-validation-for = "doctor.Identificacion" class="text-danger"></span>
         </div>
 
         <div class="form-group">
         <label asp-for="doctor.Edad"></label>
         <input asp-for="doctor.Edad" class="form-control">
+        <span asp-validation-for = "doctor.Edad" class="text-danger"></span>
         
         </div>
 
         <div class="form-group">
         <label asp-for="doctor.Ciudad"></label>
         <input asp-for="doctor.Ciudad" class="form-control">
+        <span asp-validation-for = "doctor.Ciudad" class="text-danger"></span>
         
     </div>
 
         <div class="form-group">
         <label asp-for="doctor.Telefono"></label>
         <input asp-for="doctor.Telefono" class="form-control">
+        <span asp-validation-for = "doctor.Telefono" class="text-danger"></span>
     
     </div>
     <div class="form-group">
         <label asp-for="doctor.Email"></label>
         <input asp-for="doctor.Email" class="form-control">
+        <span asp-validation-for = "doctor.Email" class="text-danger"></span>
         
     </div>
         <div class="form-group">
@@ -49,6 +60,7 @@
     <div class="form-group">
         <label asp-for="doctor.Especialidad"></label>
         <input asp-for="doctor.Especialidad" class="form-control">
+        <span asp-validation-for = "doctor.Especialidad" class="text-danger"></span>
         
         </div>
     <button type="submit" class="btn btn-primary">Crear Doctor</button>

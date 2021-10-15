@@ -7,8 +7,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">Nombre</th>            
-            <th scope="col">Apellido</th>
+            <th scope="col">Nombre</th>
             <th scope="col">Genero</th>
             <th scope="col">Tipo de paciente</th>
             <th scope="col">Acciones</th>
@@ -19,14 +18,13 @@
         {
            <tr>
                <td>@paciente.Nombre</td>
-               <td>@paciente.Apellidos</td>
                <td>@paciente.Genero</td>              
                <td>@paciente.TipoPaciente</td>
                <td>
-                   <a class="btn btn-primary" asp-page="./Details" asp-route-id="@paciente.IdPaciente">
+                   <a class="btn btn-primary" asp-page="./Details" asp-route-id="@paciente.Id">
                     Detalle
                    </a>
-                   <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@paciente.IdPaciente">
+                   <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@paciente.Id">
                     Editar
                    </a>
                </td>
