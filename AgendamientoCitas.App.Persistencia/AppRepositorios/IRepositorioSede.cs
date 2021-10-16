@@ -11,6 +11,7 @@ namespace AgendamientoCitas.App.Persistencia
         Sede UpdateSede(Sede sede);
         void DeleteSede(int idSede);
         Sede GetSede(int idSede);
+        List<PrestadorDeServicio> AddPrestadorDeServicio(int idSede, int idPrestadordeServicio);
         //public PrestadorDeServicio AsignarPrestadorDeServicio(int idSede, PrestadorDeServicio prestadorDeServicio);
     }
 }

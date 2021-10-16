@@ -20,5 +20,23 @@
         <th scope="col">Telefono</th>
         <td>@Model.sede.Telefono</td>
     </tr>
+    <tr>
+        <th  scope="col">Prestadores de Servicio</th>
+        @if (Model.sede.PrestadoresDeServicio == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddPrestadorDeServicio" asp-route-id="@Model.sede.Id">
+                    Adicionar Prestador de Servicio
+                </a>
+            </td>
+        }
+        else
+        {
+            foreach (var prestador in @Model.sede.PrestadoresDeServicio)
+            {
+                <td>prestador.RazonSocial</td>
+            }
+        }
+    </tr>
 </table>
 <a class="btn btn-primary" asp-page="./Index">Volver</a>

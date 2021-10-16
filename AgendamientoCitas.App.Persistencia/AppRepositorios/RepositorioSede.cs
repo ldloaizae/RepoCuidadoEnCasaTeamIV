@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using AgendamientoCitas.App.Dominio;
 
 namespace AgendamientoCitas.App.Persistencia
@@ -29,7 +30,12 @@ namespace AgendamientoCitas.App.Persistencia
           }
         Sede IRepositorioSede.GetSede(int idSede)
           {
-           return _appContext.Sedes.FirstOrDefault(p =>p.Id==idSede);//retorna lo que encuentra
+            var sede = _appContext.Sedes
+                      .Where(p =>p.Id==idSede)
+                      .Include(p =>p.PrestadoresDeServicio)
+                      .FirstOrDefault();
+            return sede;          
+           //return _appContext.Sedes.FirstOrDefault(p =>p.Id==idSede);//retorna lo que encuentra
           }
         Sede IRepositorioSede.UpdateSede(Sede sede)
           {
@@ -45,5 +51,20 @@ namespace AgendamientoCitas.App.Persistencia
              return sedeEncontrada; //retorna el prestadorDeServicioEncontrado encontrado
             
           }
+        List<PrestadorDeServicio> IRepositorioSede.AddPrestadorDeServicio(int idSede, int idPrestadordeServicio)
+        {
+            var sedeEncontrada = _appContext.Sedes.Find(idSede);
+            if (sedeEncontrada != null)
+            {
+                var prestadorEncontrado = _appContext.PrestadoresDeServicios.Find(idPrestadordeServicio);
+                if (prestadorEncontrado != null)
+                {
+                    sedeEncontrada.PrestadoresDeServicio.Add(prestadorEncontrado);
+                    _appContext.SaveChanges();
+                }
+                return sedeEncontrada.PrestadoresDeServicio;
+            }
+            return null;
+        }
     }
 }
