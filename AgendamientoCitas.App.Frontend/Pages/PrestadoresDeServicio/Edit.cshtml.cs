@@ -32,8 +32,16 @@ namespace AgendamientoCitas.App.Frontend.Pages.PrestadoresDeServicio
         }
         public IActionResult OnPost(PrestadorDeServicio prestadorDeServicio)
         {
-            _repoPrestadorDeServicio.UpdatePrestadorDeServicio(prestadorDeServicio);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoPrestadorDeServicio.UpdatePrestadorDeServicio(prestadorDeServicio);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
+            
         }
     }
 }

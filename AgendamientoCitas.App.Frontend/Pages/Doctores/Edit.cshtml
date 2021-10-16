@@ -1,0 +1,58 @@
+﻿@page
+@using AgendamientoCitas.App.Dominio
+@model AgendamientoCitas.App.Frontend.Pages.Doctores.EditModel
+@{
+}
+
+<h1>Editar Doctor</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Doctor.Nombre"></label>
+        <input asp-for="Doctor.Nombre" class="form-control">
+        <span asp-validation-for="Doctor.Nombre" class="text-danger"></span>
+    </div>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Doctor.Identificacion"></label>
+        <input asp-for="Doctor.Identificacion" class="form-control">
+        <span asp-validation-for="Doctor.Identificacion" class="text-danger"></span>
+    </div>
+
+        <div class="form-group">
+        <label asp-for="Doctor.Edad"></label>
+        <input asp-for="Doctor.Edad" class="form-control">
+        <span asp-validation-for="Doctor.Edad" class="text-danger"></span>
+    </div>
+
+        <div class="form-group">
+        <label asp-for="Doctor.Ciudad"></label>
+        <input asp-for="Doctor.Ciudad" class="form-control">
+        <span asp-validation-for="Doctor.Ciudad" class="text-danger"></span>
+    </div>
+
+        <div class="form-group">
+        <label asp-for="Doctor.Telefono"></label>
+        <input asp-for="Doctor.Telefono" class="form-control">
+        <span asp-validation-for="Doctor.Telefono" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Doctor.Email"></label>
+        <input asp-for="Doctor.Email" class="form-control">
+        <span asp-validation-for="Doctor.Email" class="text-danger"></span>
+    </div>
+        <div class="form-group">
+        <label asp-for="Doctor.Genero"></label>
+        <select asp-for="Doctor.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control">
+        </select>
+        <span asp-validation-for="Doctor.Genero" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Doctor.Especialidad"></label>
+        <input asp-for="Doctor.Especialidad" class="form-control">
+        <span asp-validation-for="Doctor.Especialidad" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar Doctor</button>
+</form>
+<a class="btn btn-secundary" asp-page="./Index">Volver</a>

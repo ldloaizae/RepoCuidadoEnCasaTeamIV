@@ -1,0 +1,49 @@
+﻿@page
+@using AgendamientoCitas.App.Dominio
+@model AgendamientoCitas.App.Frontend.Pages.Pacientes.EditModel
+@{
+}
+<h1>Editar datos Paciente</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="paciente.Id"></label>
+        <input asp-for="paciente.Id" class="form-control" readonly>
+    </div>
+<div class="form-group">
+    <label asp-for="paciente.Nombre"></label>
+    <input asp-for="paciente.Nombre" class="form-control">
+    <span asp-validation-for = "paciente.Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label asp-for="paciente.Identificacion"></label>
+    <input asp-for="paciente.Identificacion" class="form-control">
+    <span asp-validation-for = "paciente.Identificacion" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="paciente.Edad"></label>
+    <input asp-for="paciente.Edad" class="form-control">
+    <span asp-validation-for = "paciente.Edad" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="paciente.Ciudad"></label>
+    <input asp-for="paciente.Ciudad" class="form-control">
+    <span asp-validation-for = "paciente.Ciudad" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="paciente.Telefono"></label>
+    <input asp-for="paciente.Telefono" class="form-control">
+    <span asp-validation-for = "paciente.Telefono" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="paciente.Email"></label>
+    <input asp-for="paciente.Email" class="form-control">
+    <span asp-validation-for = "paciente.Email" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="paciente.Genero"></label>
+    <select asp-for="paciente.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
+</div>
+<button type="submit" class="btn btn-primary">Editar Paciente</button>
+</form>
+<a class="btn btn-secondary" asp-page=".Index">Regresar</a>

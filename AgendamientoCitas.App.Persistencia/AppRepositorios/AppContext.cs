@@ -18,6 +18,8 @@ namespace AgendamientoCitas.App.Persistencia
            {
                optionsBuilder
                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = AgendamientoCitasData");
+                /*optionsBuilder
+                .UseSqlite(connectionString);*/
 
             }
         }
