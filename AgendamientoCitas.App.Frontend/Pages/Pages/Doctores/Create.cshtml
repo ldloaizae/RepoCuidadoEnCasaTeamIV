@@ -1,0 +1,56 @@
+﻿@page
+@using AgendamientoCitas.App.Dominio
+@model AgendamientoCitas.App.Frontend.Pages.Doctores.CreateModel
+@{
+}
+
+<h1>Nuevo Doctor</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="doctor.Nombre"></label>
+        <input asp-for="doctor.Nombre" class="form-control">
+        
+        </div>
+
+
+    <div class="form-group">
+        <label asp-for="doctor.Identificacion"></label>
+        <input asp-for="doctor.Identificacion" class="form-control">
+        </div>
+
+        <div class="form-group">
+        <label asp-for="doctor.Edad"></label>
+        <input asp-for="doctor.Edad" class="form-control">
+        
+        </div>
+
+        <div class="form-group">
+        <label asp-for="doctor.Ciudad"></label>
+        <input asp-for="doctor.Ciudad" class="form-control">
+        
+    </div>
+
+        <div class="form-group">
+        <label asp-for="doctor.Telefono"></label>
+        <input asp-for="doctor.Telefono" class="form-control">
+    
+    </div>
+    <div class="form-group">
+        <label asp-for="doctor.Email"></label>
+        <input asp-for="doctor.Email" class="form-control">
+        
+    </div>
+        <div class="form-group">
+        <label asp-for="doctor.Genero"></label>
+        <select asp-for="doctor.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control">
+        </select>
+        
+    </div>
+    <div class="form-group">
+        <label asp-for="doctor.Especialidad"></label>
+        <input asp-for="doctor.Especialidad" class="form-control">
+        
+        </div>
+    <button type="submit" class="btn btn-primary">Crear Doctor</button>
+</form>
+<a class="btn btn-secundary" asp-page="./Index">Volver</a>
