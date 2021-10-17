@@ -55,9 +55,10 @@ namespace AgendamientoCitas.App.Persistencia
         {
             var sedeEncontrada = _appContext.Sedes.Find(idSede);
             if (sedeEncontrada != null)
-            {
+            {   
+                var prestadorRepetido = sedeEncontrada.PrestadoresDeServicio.Exists(x => x.Id == idPrestadordeServicio);
                 var prestadorEncontrado = _appContext.PrestadoresDeServicios.Find(idPrestadordeServicio);
-                if (prestadorEncontrado != null)
+                if (prestadorEncontrado != null && !prestadorRepetido)
                 {
                     sedeEncontrada.PrestadoresDeServicio.Add(prestadorEncontrado);
                     _appContext.SaveChanges();
