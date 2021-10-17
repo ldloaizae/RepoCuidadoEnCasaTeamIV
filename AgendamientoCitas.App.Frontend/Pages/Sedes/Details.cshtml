@@ -22,7 +22,7 @@
     </tr>
     <tr>
         <th  scope="col">Prestadores de Servicio</th>
-        @if (Model.sede.PrestadoresDeServicio == null)
+        @if (Model.sede.PrestadoresDeServicio.Count == 0)
         {
             <td>
                 <a class="btn btn-primary" asp-page="./AddPrestadorDeServicio" asp-route-id="@Model.sede.Id">
@@ -32,10 +32,15 @@
         }
         else
         {
-            foreach (var prestador in @Model.sede.PrestadoresDeServicio)
+            @foreach (var prestador in @Model.sede.PrestadoresDeServicio)
             {
-                <td>prestador.RazonSocial</td>
+                <td>@prestador.RazonSocial</td>
             }
+            <td>
+                <a class="btn btn-primary" asp-page="./AddPrestadorDeServicio" asp-route-id="@Model.sede.Id">
+                    Adicionar Prestador de Servicio
+                </a>
+            </td>
         }
     </tr>
 </table>

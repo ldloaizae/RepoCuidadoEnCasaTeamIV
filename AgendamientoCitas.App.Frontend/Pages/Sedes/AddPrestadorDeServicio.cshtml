@@ -1,12 +1,17 @@
 ﻿@page
+@using AgendamientoCitas.App.Dominio
 @model AgendamientoCitas.App.Frontend.Pages.Sedes.AddPrestadorDeServicioModel
 @{
 }
 <h1>Adicionar prestador de servicio</h1>
 <form method="post">
     <div class="form-group">
-        <label for="idSede">Sede</label>
+        <label for="idSede">Sede Id</label>
         <input type="text" id="idSede" name="idSede" class="form-control" value="@Model.sede.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="NombreSede">Nombre Sede</label>
+        <input type="text" id="NombreSede" name="NombreSede" class="form-control" value="@Model.sede.Nombre" readonly>
     </div>
     <div class="form-group">
         <label for="idPrestador">Prestador</label>
@@ -17,4 +22,6 @@
             }
         </select>
     </div>
+    <button type="submit" class="btn btn-primary">Adicionar prestador de servicio</button>
 </form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

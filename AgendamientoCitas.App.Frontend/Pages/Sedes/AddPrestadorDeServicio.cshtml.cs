@@ -20,10 +20,15 @@ namespace AgendamientoCitas.App.Frontend.Pages.Sedes
             _repoSede = repoSede;
             _repoPrestadorDeServicio = repoPrestadorDeServicio;
         }
-        public void OnGet(int idSede)
+        public void OnGet(int id)
         {
-            sede = _repoSede.GetSede(idSede);
+            sede = _repoSede.GetSede(id);
             prestadoresDeServicio = _repoPrestadorDeServicio.GetAllPrestadoresDeServicios();
+        }
+        public IActionResult OnPost(int idSede, int idPrestadorDeServicio)
+        {
+            _repoSede.AddPrestadorDeServicio(idSede,idPrestadorDeServicio);
+            return RedirectToPage("Details", new{id=idSede});
         }
     }
 }
