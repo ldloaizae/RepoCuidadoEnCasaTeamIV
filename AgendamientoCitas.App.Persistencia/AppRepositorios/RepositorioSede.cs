@@ -43,7 +43,15 @@ namespace AgendamientoCitas.App.Persistencia
                 _appContext.SaveChanges();        
            }
              return sedeEncontrada; //retorna el prestadorDeServicioEncontrado encontrado
-            
           }
+        IEnumerable<Sede> IRepositorioSede.GetSedesFiltradas(int sede){
+          return _appContext.Sedes
+                      .Where(p => p.Id == sede);
+                      
+        }
+        IEnumerable<Sede> IRepositorioSede.BuscarSede(String Nombre){
+          return _appContext.Sedes
+                .Where (p => p.Nombre.Contains(Nombre));
+        }
     }
 }

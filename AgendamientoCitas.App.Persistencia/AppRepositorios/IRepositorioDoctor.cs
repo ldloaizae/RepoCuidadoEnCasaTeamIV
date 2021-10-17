@@ -11,5 +11,9 @@ namespace AgendamientoCitas.App.Persistencia
         Doctor UpdateDoctor(Doctor doctor);
         void DeleteDoctor(int idDoctor);
         Doctor GetDoctor(int idDoctor); 
+
+        IEnumerable<Doctor> GetDoctoresFiltrados(int doctor);
+    
+        IEnumerable<Doctor> BuscarDoctores(String Nombre);    
     }
 }

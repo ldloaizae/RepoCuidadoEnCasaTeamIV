@@ -10,7 +10,10 @@ namespace AgendamientoCitas.App.Persistencia
         Sede AddSede(Sede sede);
         Sede UpdateSede(Sede sede);
         void DeleteSede(int idSede);
-        Sede GetSede(int idSede);
+        Sede GetSede(int IdSede);
         //public PrestadorDeServicio AsignarPrestadorDeServicio(int idSede, PrestadorDeServicio prestadorDeServicio);
+        IEnumerable<Sede> GetSedesFiltradas(int sede);
+    
+        IEnumerable<Sede> BuscarSede(String Nombre); 
     }
 }
