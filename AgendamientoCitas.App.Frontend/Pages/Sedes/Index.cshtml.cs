@@ -13,13 +13,33 @@ namespace AgendamientoCitas.App.Frontend.Pages.Sedes
     {
         private readonly IRepositorioSede _repoSede;
         public IEnumerable<Sede> sedes {get; set;} 
+        public int gActual{get; set;}
+        public string bActual {get; set;}        
         public IndexModel(IRepositorioSede repoSede)
         {
             _repoSede = repoSede;
         }
-        public void OnGet()
+        public void OnGet(int? g, string b)
         {
-            sedes = _repoSede.GetAllSedes();
+            if (g.HasValue && g.Value != -1)
+            {
+                gActual = g.Value;
+                sedes = _repoSede.GetSedesFiltradas(g.Value);                
+            }
+            else
+            {
+                gActual = -1;
+                if (String.IsNullOrEmpty(b))
+                {
+                    bActual = "";
+                    sedes = _repoSede.GetAllSedes();
+                }
+                else
+                {
+                    bActual = b;
+                    sedes = _repoSede.BuscarSede(b);
+                }
+            }
         }
     }
 }

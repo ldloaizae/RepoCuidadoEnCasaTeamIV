@@ -2,6 +2,20 @@
 @model AgendamientoCitas.App.Frontend.Pages.Citas.IndexModel
 @{
 }
+<form method="get" class="form-inline">
+    <label class="my-1 mr-2" for="g">Cita</label>
+    <select class="custom-select my-1 mr-sm-2" id="g" name="g" asp-for="@Model.gActual">
+        <option value="-1">Ver todos</option>
+    </select>
+    <button type="submit" class="btn btn-primary my-1">Filtrar</button>
+</form>
+
+<form method="get" class="form-inline">
+    <label class="my-1 mr-2" for="b">Buscar</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="b" name="b" asp-for="@Model.bActual">
+    <button type="submit" class="btn btn-secondary my-1">Buscar</button>
+</form>
+
 <h1>Listado Citas</h1>
 <a class="btn btn-primary" asp-page="./Create">Nueva Cita</a>
 <table class="table">

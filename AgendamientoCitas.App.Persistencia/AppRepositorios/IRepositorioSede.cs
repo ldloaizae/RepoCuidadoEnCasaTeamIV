@@ -13,5 +13,8 @@ namespace AgendamientoCitas.App.Persistencia
         Sede GetSede(int idSede);
         List<PrestadorDeServicio> AddPrestadorDeServicio(int idSede, int idPrestadordeServicio);
         //public PrestadorDeServicio AsignarPrestadorDeServicio(int idSede, PrestadorDeServicio prestadorDeServicio);
+        IEnumerable<Sede> GetSedesFiltradas(int sede);
+    
+        IEnumerable<Sede> BuscarSede(String Nombre); 
     }
 }

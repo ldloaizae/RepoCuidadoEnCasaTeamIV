@@ -11,5 +11,9 @@ namespace AgendamientoCitas.App.Persistencia
         Cita UpdateCita(Cita cita);
         void DeleteCita(int idCita);
         Cita GetCita(int idCita); 
+
+        IEnumerable<Cita> GetCitasFiltradas(int idCita);
+    
+        IEnumerable<Cita> BuscarCita(String Consultorio);   
     }
 }

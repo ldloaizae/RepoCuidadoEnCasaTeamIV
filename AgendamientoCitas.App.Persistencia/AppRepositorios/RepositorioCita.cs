@@ -51,5 +51,16 @@ namespace AgendamientoCitas.App.Persistencia
              return citaEncontrada; //retorna el prestadorDeServicioEncontrado encontrado
             
           }
+        IEnumerable<Cita> IRepositorioCita.GetCitasFiltradas(int idcita){
+          return _appContext.Citas
+                      .Where(p => p.Id == idcita);
+                      
+        }
+        IEnumerable<Cita> IRepositorioCita.BuscarCita(string consultorio){
+          return _appContext.Citas
+                .Where (p => p.Consultorio.Contains(consultorio));
+        }
+        
     }
-}
+}    
+
