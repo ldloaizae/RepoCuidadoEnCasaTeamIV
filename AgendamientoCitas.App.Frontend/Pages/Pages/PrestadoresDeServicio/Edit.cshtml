@@ -1,0 +1,35 @@
+﻿@page
+@using AgendamientoCitas.App.Dominio
+@model AgendamientoCitas.App.Frontend.Pages.PrestadoresDeServicio.EditModel
+@{
+}
+<h1>Editar Prestador de Servicio</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="prestadorDeServicio.Id"></label>
+        <input asp-for="prestadorDeServicio.Id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="prestadorDeServicio.RazonSocial"></label>
+        <input asp-for="prestadorDeServicio.RazonSocial" class="form-control">
+        <span asp-validation-for="prestadorDeServicio.RazonSocial" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="prestadorDeServicio.Nit"></label>
+        <input asp-for="prestadorDeServicio.Nit" class="form-control">
+        <span asp-validation-for="prestadorDeServicio.Nit" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="prestadorDeServicio.TipoDePrestador"></label>
+        <select asp-for="prestadorDeServicio.TipoDePrestador" asp-items="Html.GetEnumSelectList<TipoDePrestador>()" class="form-control">
+        </select>
+        <span asp-validation-for="prestadorDeServicio.TipoDePrestador" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="prestadorDeServicio.Telefono"></label>
+        <input asp-for="prestadorDeServicio.Telefono" class="form-control">
+        <span asp-validation-for="prestadorDeServicio.Telefono" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar prestador de servicio</button>
+</form>
+<a class="btn btn-secundary" asp-page="./Index">Volver</a>

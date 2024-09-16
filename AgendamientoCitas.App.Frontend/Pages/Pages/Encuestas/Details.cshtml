@@ -1,0 +1,20 @@
+﻿@page
+@model AgendamientoCitas.App.Frontend.Pages.Encuestas.DetailsModel
+@{
+}
+<h1>Detalles de la encuesta</h1>
+<table class="table table-dark">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.encuesta.Id</td>
+    </tr>
+    <tr>
+        <th scope="col">Sintomas</th>
+        <td>@Model.encuesta.Sintomas</td>
+    </tr>
+    <tr>
+        <th scope="col">Modalidad de Atencion</th>
+        <td>@Model.encuesta.ModalidadAtencion</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
